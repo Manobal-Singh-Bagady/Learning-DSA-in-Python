@@ -42,7 +42,7 @@ class LinkedList:
 
     def append(self, value):
         if self.head is not None:
-            self.tail.next = Node(value) # type: ignore
+            self.tail.next = Node(value)  # type: ignore
             self.tail = self.tail.next  # type: ignore
         else:
             self.head = Node(value)
