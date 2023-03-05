@@ -1,9 +1,10 @@
 import sys
-sys.stdin = open("input.txt", "r")
-sys.stdout = open("output.txt", "w")
-sys.stderr = open("error.txt", "w")
-# Comment the above 4 lines if you are not using file input output.
-
+try:
+    sys.stdin = open("input.txt", "r")
+    sys.stdout = open("output.txt", "w")
+    sys.stderr = open("error.txt", "w")
+except:
+    pass
 
 if __name__ == "__main__":
     num1 = 11
